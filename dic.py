@@ -1,0 +1,28 @@
+# Diccionario vacío
+aeronave = {}
+
+# Diccionario con elementos
+aeronave = {
+    "modelo": "Boeing 787-9",
+    "envergadura": 60.17,  # metros
+    "longitud": 62.81,     # metros
+    "mtow": 254000,        # kg
+    "velocidad_max": 954   # km/h
+}
+
+# Diccionario con diferentes tipos de datos como valores
+vuelo = {
+    "numero": "AA123",
+    "origen": "KLAX",
+    "destino": "KJFK",
+    "distancia": 3983,
+    "a_tiempo": True,
+    "tripulacion": ["Capitán Smith", "F/O Johnson", "F/E Williams"]
+}
+
+# Creación con dict()
+motor = dict(fabricante="GE", modelo="GE9X", empuje=470, bypass_ratio=10)
+
+print(f"Origen: {vuelo['origen']} - Destino: {vuelo['destino']}")
+for i in vuelo["tripulacion"]:
+    print(i)
